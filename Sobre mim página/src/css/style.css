@@ -1,0 +1,103 @@
+/* cores */
+/* 
+--air-force-blue: #4889aaff;
+--frozen-water: #d1e3ddff;
+*/
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #214484, #2955a6, #3d7cf2);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-style: normal;
+}
+
+#header {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(to bottom, #0c0c0c, #ffffff00);
+  color: #edf2ff;
+}
+
+header img {
+  border-radius: 50%;
+  width: 80px;
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: "Jersey 10", sans-serif;
+  text-shadow: #0c0c0c 1px 1px 2px;
+  font-size: 2.5rem;
+  margin-left: 10px;
+  letter-spacing: 2px;
+}
+
+#nav1 {
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  gap: 15px;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 1.5rem;
+}
+
+#nav1 a {
+  text-decoration: none;
+  color: #edf2ff;
+  padding: 4px;
+  text-shadow: #0c0c0c 1px 1px 2px;
+}
+
+#nav1 a:hover {
+  background-color: #edf2ff;
+  border-radius: 5px;
+  color: #4889aaff;
+  transition: 0.5s;
+}
+
+#sobre {
+  color: #edf2ff;
+  font-family: "Jersey 10", sans-serif;
+  text-align: center;
+  margin: 40px;
+  text-shadow: #0c0c0c 1px 1px 2px;
+  font-size: 2rem;
+}
+
+.projetos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 5px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card img {
+  width: 100%;
+  margin: auto;
+}
+
+h3 {
+  font-family: "Jersey 10", sans-serif;
+  text-align: center;
+  color: #edf2ff;
+   text-shadow: #0c0c0c 1px 1px 2px;
+   letter-spacing: 2px;
+}
