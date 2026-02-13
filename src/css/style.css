@@ -10,6 +10,8 @@ body {
   background: linear-gradient(to bottom, #214484, #2955a6, #3d7cf2);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .jersey-10-regular {
@@ -21,7 +23,7 @@ body {
   text-align: left;
   display: flex;
   align-items: center;
-  height: 100px;
+  padding: 20px 0;
   background: linear-gradient(to bottom, #0c0c0c, #ffffff00);
   color: #edf2ff;
 }
@@ -35,32 +37,9 @@ header img {
 h1 {
   font-family: "Jersey 10", sans-serif;
   text-shadow: #0c0c0c 1px 1px 2px;
-  font-size: 2.5rem;
+   font-size: clamp(2rem, 6vw, 4rem);
   margin-left: 10px;
   letter-spacing: 2px;
-}
-
-#nav1 {
-  margin-left: auto;
-  margin-right: 20px;
-  display: flex;
-  gap: 15px;
-  font-family: "Jersey 10", sans-serif;
-  font-size: 1.5rem;
-}
-
-#nav1 a {
-  text-decoration: none;
-  color: #edf2ff;
-  padding: 4px;
-  text-shadow: #0c0c0c 1px 1px 2px;
-}
-
-#nav1 a:hover {
-  background-color: #edf2ff;
-  border-radius: 5px;
-  color: #4889aaff;
-  transition: 0.5s;
 }
 
 #sobre {
@@ -70,6 +49,10 @@ h1 {
   margin: 40px;
   text-shadow: #0c0c0c 1px 1px 2px;
   font-size: 2rem;
+}
+
+main {
+  flex: 1;
 }
 
 .projetos {
@@ -86,18 +69,52 @@ h1 {
   border-radius: 8px;
   width: 200px;
   height: 250px;
-  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
-  margin: auto;
+  height: 200px;
+  object-fit: cover;
 }
 
 h3 {
   font-family: "Jersey 10", sans-serif;
   text-align: center;
   color: #edf2ff;
-   text-shadow: #0c0c0c 1px 1px 2px;
-   letter-spacing: 2px;
+  text-shadow: #0c0c0c 1px 1px 2px;
+  letter-spacing: 2px;
+}
+
+footer {
+  background-color: #214484;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav1 {
+  margin-right: 20px;
+  display: flex;
+  gap: 15px;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 3vw;
+}
+
+#nav1 a {
+  text-decoration: none;
+  color: #edf2ff;
+  padding: 4px;
+  text-shadow: #0c0c0c 1px 1px 2px;
+}
+
+#nav1 a:hover {
+  background-color: #edf2ff;
+  border-radius: 5px;
+  color: #4889aaff;
+  transition: 0.5s;
 }
